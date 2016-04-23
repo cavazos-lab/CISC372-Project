@@ -7,11 +7,7 @@
 #include "pagerank-straw.h"
 
 /////////////////////////////////////////////////////////////
-// The imagined pagerank-serial.h contains my (student) serial_mvpSM and possibly other reworked functions.
-//#include "pagerank-serial.h"
-// ...or I put it right here:
 void serial_mvpSM(double * w, SparseMatrix S, double * z) {
-	// this is a stub.  ..replace this with an improved serial matrix vector product.
 	strawman_mvpSM(w, S, z);
 }
 /////////////////////////////////////////////////////////////
@@ -23,7 +19,6 @@ void uniform(double *x, int n) {
 	for (i = 0; i < n; ++i) x[i] = ninv;
 }
 
-// main tests strawman version against my new serial version.
 int main(int argc, char* argv[]){
 	// hello
 	int n = 100;
